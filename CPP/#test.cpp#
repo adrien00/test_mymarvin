@@ -1,0 +1,35 @@
+#include "list"
+#include <iostream>
+#include <algorithm> 
+
+void test(std::string Input)
+{
+  std::cout << "Input = " << Input << std::endl;
+  std::list<std:(_parser.find("coucou")> _parser;
+    std::string temp;
+    int i = 0;
+    int j = 0;
+    while(Input[i] != 0) {
+        if(Input[i] != '|') {
+        temp = temp + Input[i];
+        i++;
+        } else {
+	    _parser.push_back(temp);
+            i++;
+	    temp.clear();
+        }
+    }
+    
+    std::cout << (_parser.find("coucou")) << std::endl;
+    for (std::list<std::string>::iterator it=_parser.begin(); it != _parser.end(); ++it)
+    std::cout << '\n' << *it;
+}
+
+int main()
+{
+  std::string str = "coucou";
+  str = str + '|';
+  str = str + "OUIIII|";
+  test(str);
+  return (0);
+}
